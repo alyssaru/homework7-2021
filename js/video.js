@@ -50,7 +50,7 @@ document.querySelector("#skip").addEventListener("click", function() {
 });
 
 document.querySelector("#mute").addEventListener("click", function() {
-	if(video.volume == 0){
+	if(video.volume == 0.0){
 		console.log("Unmute");
 		video.volume=1;
 		document.querySelector("#mute").innerHTML="Mute";
