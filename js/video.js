@@ -40,6 +40,7 @@ document.querySelector("#skip").addEventListener("click", function() {
 	if(video.currentTime + 15 >= video.duration){
 		console.log("Start over");
 		video.currentTime = 0;
+		video.play();
 	}
 	else{
 		console.log("Skip ahead");
