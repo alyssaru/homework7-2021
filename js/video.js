@@ -54,10 +54,12 @@ document.querySelector("#mute").addEventListener("click", function() {
 		console.log("Unmute");
 		video.volume=1;
 		document.querySelector("#mute").innerHTML="Mute";
+		video.muted = false;
 	}else{
 		console.log("Mute");
 		video.volume=0;
 		document.querySelector("#mute").innerHTML="Unmute";
+		video.muted = true;
 	}
 	document.querySelector("#volume").innerHTML=video.volume*100+"%"
 	console.log(video.volume);
